@@ -33,13 +33,5 @@ ActiveRecord::Schema.define(version: 20160716170136) do
     t.index ["product_id"], name: "index_reviews_on_product_id", using: :btree
   end
 
-  create_table "skateboards", force: :cascade do |t|
-    t.string   "name"
-    t.text     "description"
-    t.integer  "price_in_cents"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
-  end
-
   add_foreign_key "reviews", "products"
 end
