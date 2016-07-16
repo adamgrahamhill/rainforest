@@ -31,6 +31,12 @@
     <%= f.text_area :url %>
   </div>
 
+  <div class="field">
+    <%= f.select(:category, options_for_select( ['skate', 'shoes', 'apparel'])) %>
+  </div>
+
+
+
   <div class="actions">
     <%= f.submit %>
   </div>
