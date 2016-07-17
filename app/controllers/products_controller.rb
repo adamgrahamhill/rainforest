@@ -14,6 +14,11 @@ class ProductsController < ApplicationController
   def apparel_sort
     @apparel = Product.where(category: "apparel")
   end
+
+  def skate_sort
+    @skate = Product.where(category: "skate")
+  end
+
   # GET /products/1
   # GET /products/1.json
   def show

@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   root 'static#landing_page'
   get '/shoes', to: 'products#shoe_sort'
   get '/apparel', to: 'products#apparel_sort'
+  get '/skate', to: 'products#skate_sort'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
