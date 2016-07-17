@@ -4,7 +4,12 @@
 * {
   box-sizing: border-box;
 }
-
+#outer {
+  background-image: url(https://images6.alphacoders.com/423/423562.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
 
 .flex_column {
   display: flex;
@@ -51,4 +56,10 @@ aside {
 footer {
   flex-grow: 1;
   flex-basis: 10%;
+}
+nav {
+  background-color: lightgrey;
+}
+header {
+  font-size: 200%;
 }
