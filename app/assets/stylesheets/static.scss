@@ -1,3 +1,54 @@
 // Place all the styles related to the Static controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+  box-sizing: border-box;
+}
+
+
+.flex_column {
+  display: flex;
+  flex-direction: column;
+  border: 1px dashed lightgrey;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+}
+li {
+  list-style-type: none;
+}
+#center div:first-child {
+  flex-grow: 2;
+  flex-basis: 100em;
+}
+#center div:nth-child(2) {
+  flex-grow: 1;
+  flex-basis: 40em;
+}
+
+article {
+  padding: 4em;
+}
+
+aside {
+  padding: 3em;
+}
+#one {
+  flex-grow: 1;
+  flex-basis: 10%;
+}
+#two {
+  flex-grow: 1;
+  flex-basis: 10%;
+}
+#center {
+  display: flex;
+  flex-grow: 3;
+  flex-basis: 70%;
+}
+footer {
+  flex-grow: 1;
+  flex-basis: 10%;
+}
