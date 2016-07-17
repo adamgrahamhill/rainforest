@@ -55,22 +55,10 @@ class ProductsController < ApplicationController
   # DELETE /products/1
   # DELETE /products/1.json
   def destroy
-
-    if Review.find_by(product_id: @product.id)
-      until Review.find_by(product_id: @product.id) == nil
-        Review.find_by(product_id: @product.id).destroy
-      end
-      @product.destroy
-      respond_to do |format|
-        format.html { redirect_to products_url, notice: 'Product was successfully destroyed.' }
-        format.json { head :no_content }
-      end
-    else
-      @product.destroy
-      respond_to do |format|
-        format.html { redirect_to products_url, notice: 'Product was successfully destroyed.' }
-        format.json { head :no_content }
-      end
+    @product.destroy
+    respond_to do |format|
+      format.html { redirect_to products_url, notice: 'Product was successfully destroyed.' }
+      format.json { head :no_content }
     end
   end
 
