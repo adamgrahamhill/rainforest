@@ -7,6 +7,13 @@ class ProductsController < ApplicationController
     @products = Product.all
   end
 
+  def shoe_sort
+    @shoes = Product.where(category: "shoes")
+  end
+
+  def apparel_sort
+    @apparel = Product.where(category: "apparel")
+  end
   # GET /products/1
   # GET /products/1.json
   def show
