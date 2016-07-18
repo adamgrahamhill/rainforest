@@ -2,21 +2,28 @@
   <header id="one">Shark Junior's</header>
   <nav id="two">
     <ul>
-      <li><a href="#">Skate</a></li>
-      <li><a href="#">Shoes</a></li>
-      <li><a href="#">Apparel</a></li>
-      <li><a href="#">Videos</a></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="/skate">Skate</a></li>
+      <li><a href="/shoes">Shoes</a></li>
+      <li><a href="/apparel">Apparel</a></li>
+      <li><a href="/videos">Videos</a></li>
     </ul>
   </nav>
   <div id="center">
-    <div class="flex_column">
+    <div class="text-center">
       <h1>Top 5 videos of the week!</h1>
-      <a href="https://www.youtube.com/watch?v=ch_I97FxJio" target="_blank">#1 Hollywood Free park montage</a>
-      <a href="https://www.youtube.com/watch?v=hD686Vo-Z8c" target="_blank">#2 February 2015 Skate Montage</a>
-      <a href="https://www.youtube.com/watch?v=pKkuaqinPNY" target="_blank">#3 Mickey O'keefe acid drops South Florida</a>
-      <a href="https://www.youtube.com/watch?v=Qfz-SyqRhhA" target="_blank">#4 Josiah Gatlyn Full Part 2010</a>
-      <a href="https://www.youtube.com/watch?v=hnZJ89ylmVQ" target="_blank">#5 Park Hammerzz!</a>
+      <%= link_to image_tag("Skate_1.png", class:"skate-image text-center"),  "https://www.youtube.com/watch?v=ch_I97FxJio", target: "_blank" %>
+      <p id="video-link" ><%= link_to "#1 Hollywood Free park montage", "https://www.youtube.com/watch?v=ch_I97FxJio", target: "_blank" %></p>
+      <%= link_to image_tag("Skate_2.png", class:"skate-image"), "https://www.youtube.com/watch?v=hD686Vo-Z8c", target: "_blank" %>
+      <p><%= link_to "#2 February 2015 Skate Montage", "https://www.youtube.com/watch?v=hD686Vo-Z8c", target: "_blank" %></p>
+      <%= link_to image_tag("Skate_3.png", class:"skate-image"), "https://www.youtube.com/watch?v=pKkuaqinPNY", target: "_blank" %>
+      <p><%= link_to "#3 Mickey O'keefe acid drops South Florida", "https://www.youtube.com/watch?v=pKkuaqinPNY", target: "_blank" %></p>
+      <%= link_to image_tag("Skate_4.png", class:"skate-image"), "https://www.youtube.com/watch?v=Qfz-SyqRhhA", target: "_blank" %>
+      <p><%= link_to "#4 Josiah Gatlyn Full Part 2010", "https://www.youtube.com/watch?v=pKkuaqinPNY", target: "_blank" %></p>
+      <%= link_to image_tag("Skate_5.png", class:"skate-image"), "https://www.youtube.com/watch?v=hnZJ89ylmVQ", target: "_blank" %>
+      <p><%= link_to "#5 Park Hammerzz!", "https://www.youtube.com/watch?v=hnZJ89ylmVQ", target: "_blank" %></p>
     </div>
+
     <div class="flex_column">
       <aside>
         Majority of of the best clips at OG hollywood freepark. enjoy!
