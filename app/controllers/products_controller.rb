@@ -6,6 +6,10 @@ class ProductsController < ApplicationController
     @products = Product.all
   end
 
+  # def rand_product
+  #   @random1 = Product.all.sample
+  # end
+
   def shoe_sort
     @shoes = Product.where(category: "shoes")
   end
