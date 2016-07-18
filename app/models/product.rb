@@ -1,6 +1,5 @@
 class Product < ActiveRecord::Base
   validates :description, :name, :url, presence: true
-  validates :price_in_cents, numericality: {only_integer: true, greater_than: 0}
   has_many :reviews, dependent: :destroy
 
   def formatted_price
