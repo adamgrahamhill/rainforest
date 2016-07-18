@@ -4,17 +4,10 @@
 * {
   box-sizing: border-box;
 }
-#outer {
-  background-image: url(https://images6.alphacoders.com/423/423562.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
 
 .flex_column {
   display: flex;
   flex-direction: column;
-  border: 1px dashed lightgrey;
 }
 
 ul {
@@ -39,6 +32,7 @@ article {
 
 aside {
   padding: 3em;
+  justify-content:center;
 }
 #one {
   flex-grow: 1;
@@ -53,13 +47,29 @@ aside {
   flex-grow: 3;
   flex-basis: 70%;
 }
-footer {
-  flex-grow: 1;
-  flex-basis: 10%;
+#skate-sort, #shoe-sort, #apparel-sort {
+  padding-left: 5em;
 }
-nav {
-  background-color: lightgrey;
+footer {
+  text-align: center;
 }
 header {
   font-size: 200%;
+  text-align: center;
+}
+aside > img {
+  max-height: 10em;
+  max-width: auto;
+}
+
+ img {
+  flex-basis: 8em;
+  max-width: 8em;
+}
+
+body {
+  background-image: url(https://images6.alphacoders.com/423/423562.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
