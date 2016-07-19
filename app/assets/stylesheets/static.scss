@@ -61,15 +61,29 @@ aside > img {
   max-height: 10em;
   max-width: auto;
 }
-
- img {
-  flex-basis: 8em;
-  max-width: 8em;
-}
+//
+//  img {
+//   flex-basis: 8em;
+//   max-width: 8em;
+// }
 
 body {
-  background-image: url(https://images6.alphacoders.com/423/423562.png);
+  // background-image: url(https://images6.alphacoders.com/423/423562.png);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+  background-color: white;
+}
+
+nav{
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  background-color: black;
+  color: white;
+}
+
+#article1{
+  height: auto;
+  max-width: 800px;
+  padding-left: 4em;
 }

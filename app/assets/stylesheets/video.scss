@@ -1,10 +1,29 @@
-.skate-image {
-height: 250px;
-width: 400px;
+.text-center img {
+  height: 250px;
+  width: 400px;
 }
 
 #video-link a:hover{
   background-color: transparent;
-text-decoration: none;
+  text-decoration: none;
+}
 
+#video-link{
+  font-size: 1.3em;
+  color: red;
+}
+
+.video-description{
+  font-size: 1.3em;
+  text-align: center;
+  margin-bottom: 1.5em;
+  color: black;
+}
+
+#center div img {
+  max-width: 10em;
+}
+
+#center #text-center img {
+  max-width: 15em;
 }
