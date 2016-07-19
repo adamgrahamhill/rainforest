@@ -10,21 +10,23 @@
     </ul>
   </nav>
   <div id="center">
-    <div id="apparel-sort" class="flex_column">
+    <div id="apparel-sort" class="flex_column product-container">
       <% @apparel.each do |item|%>
-      <a href="/products/<%= item.id %>">  <%= item.name %> </a>
-      <%= item.description %>
+      <img src="<%= item.url%>" class="shoe-image"/>
+      <a href="/products/<%= item.id %>"  class="text-center"><%= item.name %> </a>
+      <span class="shoe-desc text-center"><%= item.description %></span>
       <%= item.price_in_cents %>
-      <%= item.category %>
-      <img src="<%= item.url%>" />
        <% end %>
     </div>
     <div class="flex_column">
-      <aside>Aside1
+      <aside>
+        <h3>Great deals on <br>new products!</h3>
         <img src="<%=Product.all.sample.url%>" />
+        <p>60% off this fresh new deck!</p>
       </aside>
-      <aside>Aside2
+      <aside>
         <img src="<%=Product.all.sample.url%>" />
+        <p>40% off all new products!</p>
       </aside>
     </div>
   </div>
