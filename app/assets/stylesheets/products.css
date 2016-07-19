@@ -6,3 +6,19 @@
 /*// Place all the styles related to the Static controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/*/
+
+.product-container {
+  border-right: 5px black solid;
+}
+
+.shoe-image {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2em;
+}
+
+.shoe-desc {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
