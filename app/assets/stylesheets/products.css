@@ -22,3 +22,15 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.home-link:hover{
+  text-decoration: none;
+  color: black;
+}
+.home-link{
+  color: black;
+}
+
+.nav-link ul li a{
+  color: white;
+}

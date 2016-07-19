@@ -29,6 +29,7 @@ li {
 aside {
   padding: 3em;
   justify-content:center;
+  padding-top: 2em;
 }
 #one {
   flex-grow: 1;
@@ -50,8 +51,8 @@ footer {
   text-align: center;
 }
 header {
-  font-size: 200%;
-  text-align: center;
+  font-size: 310%;
+  text-align: left;
 }
 aside > img {
   max-height: 10em;
@@ -77,7 +78,13 @@ nav{
   background-color: black;
   color: white;
 }
-#its-soo-late {
-  text-align: center;
-  padding: 5em;
+
+// #its-soo-late {
+//   text-align: center;
+//   padding: 5em;
+
+
+.ff_project{
+  margin-top: 2em;
+  font-size: 200%;
 }
