@@ -7,27 +7,7 @@
     <li><a href="/videos">Videos</a></li>
   </ul>
 </nav>
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
-
-<p>
-  <strong>Price in cents:</strong>
-  <%= @product.price_in_cents %>
-</p>
-<p>
-  <strong>Categeory:</strong>
-  <%= @product.category %>
-</p>
-
+<div id="its-soo-late">
 <img src="<%= @product.url %>" />
 
 <p id="notice"><%= notice %></p>
@@ -39,15 +19,7 @@
   <strong>Description:</strong>
   <%= @product.description %>
 </p>
-<p>
-  <strong>Price:$</strong>
-  <%= @product.formatted_price %>
-</p>
 
-<p>
-  <strong>Product:</strong>
-  <%= @review.product %>
-</p>
 
 <h3>Reviews</h3>
 <% @product.reviews.each do |review| %>
@@ -63,3 +35,4 @@
 
 
 <%= link_to 'Back', root_path %>
+</div>
